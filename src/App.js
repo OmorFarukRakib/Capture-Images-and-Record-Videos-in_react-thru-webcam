@@ -183,7 +183,7 @@ function App() {
                         handleVideoShow();
                       }}
                     >
-                      Show
+                      Show Recording
                     </Button>
                   </React.Fragment>
                 )}
