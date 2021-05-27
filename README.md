@@ -1,3 +1,21 @@
+# To see the project in action. Go to this link: https://omorfarukrakib.github.io/Capture-Images-and-Record-Videos-in_react-thru-webcam/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
