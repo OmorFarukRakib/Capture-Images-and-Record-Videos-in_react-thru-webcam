@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/main.13658860.chunk.js",
-    "main.js.map": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/main.13658860.chunk.js.map",
+    "main.js": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/main.dfd0bd4b.chunk.js",
+    "main.js.map": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/main.dfd0bd4b.chunk.js.map",
     "runtime-main.js": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/runtime-main.9a556374.js",
     "runtime-main.js.map": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/runtime-main.9a556374.js.map",
-    "static/js/2.30e4912e.chunk.js": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/2.30e4912e.chunk.js",
-    "static/js/2.30e4912e.chunk.js.map": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/2.30e4912e.chunk.js.map",
+    "static/js/2.30931f3d.chunk.js": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/2.30931f3d.chunk.js",
+    "static/js/2.30931f3d.chunk.js.map": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/2.30931f3d.chunk.js.map",
     "index.html": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/index.html",
-    "static/js/2.30e4912e.chunk.js.LICENSE.txt": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/2.30e4912e.chunk.js.LICENSE.txt"
+    "static/js/2.30931f3d.chunk.js.LICENSE.txt": "/Capture-Images-and-Record-Videos-in_react-thru-webcam/static/js/2.30931f3d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9a556374.js",
-    "static/js/2.30e4912e.chunk.js",
-    "static/js/main.13658860.chunk.js"
+    "static/js/2.30931f3d.chunk.js",
+    "static/js/main.dfd0bd4b.chunk.js"
   ]
 }
