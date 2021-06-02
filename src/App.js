@@ -4,6 +4,7 @@ import { Button, Container, Grid, Typography } from "@material-ui/core";
 import SaveIcon from "@material-ui/icons/Save";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { makeStyles } from "@material-ui/core/styles";
+import { isMobile } from "react-device-detect";
 
 // const videoConstraintsForFrontCam = {
 //   width: 400,
@@ -183,23 +184,27 @@ function App() {
               />
               <br />
               <div>
-                {selectedCam ? (
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    onClick={handleChangeToBackCam}
-                  >
-                    Change To Back Cam
-                  </Button>
-                ) : (
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    onClick={handleChangeToFrontCam}
-                  >
-                    Change To Front Cam
-                  </Button>
-                )}
+                {isMobile ? (
+                  <div>
+                    {selectedCam ? (
+                      <Button
+                        variant="contained"
+                        color="secondary"
+                        onClick={handleChangeToBackCam}
+                      >
+                        Change To Back Cam
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="contained"
+                        color="secondary"
+                        onClick={handleChangeToFrontCam}
+                      >
+                        Change To Front Cam
+                      </Button>
+                    )}
+                  </div>
+                ) : null}
               </div>
               <br />
               <div>
