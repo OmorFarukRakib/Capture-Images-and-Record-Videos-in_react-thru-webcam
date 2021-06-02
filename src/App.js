@@ -24,13 +24,38 @@ function App() {
   const webcamRef = React.useRef(null);
   const downloadLinkRef = useRef(null);
   const [imgSrc, setImgSrc] = useState(null);
-  //const [selectedCam, setSelectedCam] = useState(true);
+  const [selectedCam, setSelectedCam] = useState(true);
 
-  const videoConstraints = {
-    width: 400,
-    height: 250,
-    facingMode: "user",
+  const videoConstraints = {};
+  if (selectedCam) {
+    const videoConstraints = {
+      width: 400,
+      height: 250,
+      facingMode: "user",
+    };
+  } else {
+    const videoConstraints = {
+      width: 400,
+      height: 250,
+      facingMode: { exact: "environment" },
+    };
+  }
+
+  const handleChangeToBackCam = () => {
+    setSelectedCam(false);
+    console.log(`Changed to back Cam with value ${videoConstraints}`);
   };
+
+  const handleChangeToFrontCam = () => {
+    setSelectedCam(true);
+    console.log(`Changed to Front Cam with value ${videoConstraints}`);
+  };
+
+  // const videoConstraints = {
+  //   width: 400,
+  //   height: 250,
+  //   facingMode: "user",
+  // };
 
   // if (selectedCam) {
   //    videoConstraints = {
@@ -73,6 +98,8 @@ function App() {
     setCapturing(true);
     mediaRecorderRef.current = new MediaRecorder(webcamRef.current.stream, {
       mimeType: "video/webm",
+      //mimeType: "video/mp4",
+      //initCallback: null,
     });
     mediaRecorderRef.current.addEventListener(
       "dataavailable",
@@ -154,6 +181,26 @@ function App() {
                 width={400}
                 videoConstraints={videoConstraints}
               />
+              <br />
+              <div>
+                {selectedCam ? (
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    onClick={handleChangeToBackCam}
+                  >
+                    Change To Back Cam
+                  </Button>
+                ) : (
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    onClick={handleChangeToFrontCam}
+                  >
+                    Change To Front Cam
+                  </Button>
+                )}
+              </div>
               <br />
               <div>
                 {capturing ? (
