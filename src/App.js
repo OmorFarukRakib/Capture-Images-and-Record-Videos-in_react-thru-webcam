@@ -26,15 +26,15 @@ function App() {
   const [imgSrc, setImgSrc] = useState(null);
   const [selectedCam, setSelectedCam] = useState(true);
 
-  const videoConstraints = {};
+  var videoConstraints = {};
   if (selectedCam) {
-    const videoConstraints = {
+    videoConstraints = {
       width: 400,
       height: 250,
       facingMode: "user",
     };
   } else {
-    const videoConstraints = {
+    videoConstraints = {
       width: 400,
       height: 250,
       facingMode: { exact: "environment" },
