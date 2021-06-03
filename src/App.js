@@ -184,7 +184,7 @@ function App() {
               />
               <br />
               <div>
-                {isMobile ? (
+                {isMobile && !capturing ? (
                   <div>
                     {selectedCam ? (
                       <Button
